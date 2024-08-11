@@ -1,29 +1,21 @@
-# Rsbuild Project
+# Module Federation Rsbuild Project (remote)
 
-## Setup
+This project implements Module Federation with Rsbuild using React and TypeScript. It is intended to provide an example of implementing basic micro-frontend design patterns.
 
-Install the dependencies:
+## Development Environment
 
-```bash
-pnpm install
-```
-
-## Get Started
-
-Start the dev server:
+This project will run independently and can be initialized and run within a local environment.
 
 ```bash
+pnpm i
 pnpm dev
 ```
 
-Build the app for production:
+Once this project is running it supports the following environment.
 
-```bash
-pnpm build
-```
+| Server | Port |
+| ----------- | ----------- |
+| host | localhost:3000 |
+| remote_one | localhost:3001 |
+| remote_two | localhost:3002 |
 
-Preview the production build locally:
-
-```bash
-pnpm preview
-```

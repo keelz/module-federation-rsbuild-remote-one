@@ -21,6 +21,7 @@ export default defineConfig({
           name: 'remote_one',
           exposes: {
             './button': './src/Button.tsx',
+            './counter-slice': './src/features/counter',
           },
           shared: {
             ...dependencies,

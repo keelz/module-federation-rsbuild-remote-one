@@ -5,13 +5,19 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "strict": true,
+    "strictNullChecks": true,
     "skipLibCheck": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "*": ["./@mf-types/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "tests"]
 }

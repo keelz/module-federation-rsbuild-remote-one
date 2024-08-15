@@ -13,7 +13,7 @@ export default function ButtonUsoage() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Button onClick={handleClick}>Increment R1</Button>
+        <Button onClick={handleClick}>increment</Button>
       </Grid>
     </Grid>
   );

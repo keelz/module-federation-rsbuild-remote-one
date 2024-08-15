@@ -30,9 +30,8 @@ export default defineConfig({
         new ModuleFederationPlugin({
           name: 'remote_one',
           exposes: {
-            './button': './src/Button',
             './reducer': './src/features/reducer',
-            './state': './src/state.ts',
+            './SharedComponent': './src/SharedComponent',
           },
           shared: {
             ...dependencies,

@@ -1,9 +1,10 @@
 import './App.css';
+import SharedComponent from './SharedComponent';
 
 const App = () => {
   return (
     <div className="content">
-      <h1>Remote One</h1>
+      <SharedComponent />
     </div>
   );
 };

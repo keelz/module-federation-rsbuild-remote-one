@@ -20,8 +20,8 @@ export default defineConfig({
         new ModuleFederationPlugin({
           name: 'remote_one',
           exposes: {
-            './button': './src/Button.tsx',
-            './counter-slice': './src/features/counter',
+            './button': './src/Button',
+            './reducer': './src/features/reducer',
           },
           shared: {
             ...dependencies,

@@ -10,6 +10,7 @@ export interface CounterState {
   value: number
 };
 
+// TODO: Figure out why TS is choking withoult this and remove it
 declare type CounterReducer = Record<string, CaseReducer<CounterState, { payload?: any; type: string; }> | CaseReducerWithPrepare<CounterState, PayloadAction<any, string, any, any>>>
 
 const initialState: CounterState = {
@@ -17,7 +18,7 @@ const initialState: CounterState = {
 };
 
 const counter: Slice<CounterState, CounterReducer> = createSlice({
-  name: 'counter',
+  name: 'remote_one_counter',
   initialState,
   reducers: {
     increment: (state: CounterState) => {

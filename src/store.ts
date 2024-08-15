@@ -1,11 +1,11 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import counter from './features/counter';
+import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
+import reducer from './features/reducer';
 
 const store = configureStore({
-  reducer: combineReducers({
-    counter: counter.reducer,
-  }),
+  reducer: {
+    remote_one: reducer,
+  },
 });
 
 export { store };

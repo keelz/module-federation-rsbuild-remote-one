@@ -4,7 +4,7 @@ import Button from './Button';
 import { RootState } from './store';
 
 const App = () => {
-  const count = useSelector((state: RootState) => state.counter.value);
+  const count = useSelector((state: RootState) => state.remote_one.counter.value);
 
   return (
     <div className="content">

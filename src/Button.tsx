@@ -11,10 +11,6 @@ export default function ButtonUsoage() {
   const handleClick = () => dispatch(increment());
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <Button onClick={handleClick}>increment</Button>
-      </Grid>
-    </Grid>
+    <Button onClick={handleClick}>increment</Button>
   );
 }

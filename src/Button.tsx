@@ -16,7 +16,7 @@ export default function ButtonUsoage() {
         <Button onClick={handleClick}>Remote One</Button>
       </Grid>
       <Grid item xs={12}>
-        <div>Local state: {count}</div>
+        <p>Local state: {count}</p>
       </Grid>
     </Grid>
   );

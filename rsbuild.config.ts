@@ -4,7 +4,17 @@ import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
 
 const dependencies = require('./package.json').dependencies;
 
+const getRemotes = (envRemotes: string | undefined) => {
+  if (envRemotes !== undefined) {
+    console.warn('REMOTES FROM ENV');
+    return JSON.parse(envRemotes);
+  }
+  console.warn('REMOTES FROM DEV');
+  return require('./remotes.dev.json');
+};
+
 export default defineConfig({
+  html: { title: 'Remote One' },
   server: {
     port: 3001,
   },

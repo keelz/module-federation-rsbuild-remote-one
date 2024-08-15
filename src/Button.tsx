@@ -13,10 +13,7 @@ export default function ButtonUsoage() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
-        <Button onClick={handleClick}>Remote One</Button>
-      </Grid>
-      <Grid item xs={12}>
-        <p>Local state: {count}</p>
+        <Button onClick={handleClick}>Increment R1</Button>
       </Grid>
     </Grid>
   );

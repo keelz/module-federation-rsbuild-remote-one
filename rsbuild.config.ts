@@ -22,6 +22,7 @@ export default defineConfig({
           exposes: {
             './button': './src/Button',
             './reducer': './src/features/reducer',
+            './state': './src/state.ts',
           },
           shared: {
             ...dependencies,

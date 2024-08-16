@@ -22,6 +22,9 @@ export default defineConfig({
     // It is necessary to configure assetPrefix, and in the production build, you need to configure output.assetPrefix
     assetPrefix: 'http://localhost:3001',
   },
+  output: {
+    assetPrefix: 'https://yourdomain.com',
+  },
   tools: {
     rspack: (config, { appendPlugins }) => {
       // You need to set a unique value that is not equal to other applications
